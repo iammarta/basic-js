@@ -1,12 +1,18 @@
 class VigenereCipheringMachine {
-    encrypt() {
-        throw 'Not implemented';
-        // remove line with error and write your code here
+    constructor(direct = true, reverse){
+        this.direct = direct;
+        this.reverse = reverse;
+    }
+    encrypt(message, key) {
+        if(message == undefined || key == undefined ){
+            throw new Error('Error');
+        }
     }
 
-    decrypt() {
-        throw 'Not implemented';
-        // remove line with error and write your code here
+    decrypt(encryptedMessage, key) {
+        if(encryptedMessage == undefined || key == undefined){
+            throw new Error('Error');  
+    }
     }
 }
 
